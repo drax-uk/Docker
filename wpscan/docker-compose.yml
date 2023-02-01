@@ -1,0 +1,7 @@
+version: '2.4'
+services:
+  app:
+    image: wpscanteam/wpscan
+    volumes:
+      - /data/wpscan/passwordlists:/wpscan/passwordlists
+      - /data/wpscan/cli_options.yml:/wpscan/.wpscan/cli_options.yml
